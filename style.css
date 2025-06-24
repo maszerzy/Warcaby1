@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 10px;
+}
+h1 {
+  margin: 10px 0;
+}
+#info {
+  margin: 5px 0;
+  font-weight: bold;
+}
+#scoreboard {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: min(90vw, 360px);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border: 2px solid #000;
+}
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.square.light { background-color: #eee; }
+.square.dark { background-color: #444; }
+.piece {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+.red { background: red; }
+.black { background: black; }
+.king { border: 2px solid gold; }
+.selected { outline: 2px dashed yellow; }
